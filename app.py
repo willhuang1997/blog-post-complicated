@@ -4,7 +4,10 @@ import numpy as np
 import pandas as pd
 import mpld3
 from mpld3 import plugins
+import streamlit as st
 import streamlit.components.v1 as components
+
+st.header("Please turn this app to light mode to see the graph!")
 
 def f(t):
     return np.exp(-t) * np.cos(2*np.pi*t)
